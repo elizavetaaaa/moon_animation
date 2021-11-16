@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: #02021d;
+    /*background: url("https://img.clipartlook.com/blue-night-sky-clipart-night-sky-clipart-2400_1697.png") center/cover no-repeat;*/
+}
+
+.block{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top:40%;
+    left: 55%;
+}
+
+
+.block-white{
+    background-color: white,;
+    animation: moonEclipse;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+
+}
+
+
+.block-black{
+    background-color: #0e051c;
+
+}
+
+@keyframes  moonEclipse{
+    0%{
+        top:40%;
+        left: 55%;
+        background-color: white;
+        box-shadow: 0 0 20px #C7938B30, 0 0 100px 8px #C7938B;
+    }
+
+
+    30%{
+        top: 39%;
+        left: 54%;
+        background-color: wheat;
+
+    }
+
+    60%{
+        top:40%;
+        left: 55%;
+        background-color: white;
+        box-shadow: 0 0 20px #C7938B30, 0 0 100px 8px #C7938B;
+    }
+
+    100%{
+        top: 41%;
+        left: 56%;
+        background-color: wheat;
+        box-shadow: none;
+    }
+}
+
+
+.star{
+    width: 2px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+
+
+}
+
+.star-1{
+    top: 200px;
+    left: 200px;
+    animation: blink 3s linear infinite;
+    color: #C7938B;
+    box-shadow: 0 0 10px #C7938B10, 0 0 20px 8px #C7938B70;
+
+
+}
+
+
+.star-2{
+    top: 400px;
+    left: 400px;
+    color: #C7938B;
+    box-shadow: 0 0 10px #C7938B10, 0 0 20px 8px #C7938B70;
+    animation: blink 2s linear infinite;
+}
+
+.star-3{
+    top: 100px;
+    left: 500px;
+    color: #C7938B;
+    box-shadow: 0 0 10px #C7938B30, 0 0 20px 8px #C7938B90;
+    animation: blink2 3s linear infinite;
+}
+
+.star-4{
+    top: 200px;
+    left: 1200px;
+    animation: blink2 2s linear infinite;
+    box-shadow: 0 0 10px #C7938B10, 0 0 20px 8px #C7938B70;
+    color: #C7938B;
+}
+
+
+.star-5{
+    top: 500px;
+    left: 1200px;
+    animation: blink 2s linear infinite;
+    box-shadow: 0 0 20px #C7938B10, 0 0 15px 8px #C7938B70;
+    color: white;
+}
+
+
+@keyframes blink {
+    0%{opacity: 1;}
+    50%{opacity: .5;}
+    100%{opacity: .9;}
+}
+
+
+
+@keyframes blink2 {
+    0%{opacity: .3;}
+    50%{opacity: .9;}
+    100%{opacity: .3;}
+}
+
